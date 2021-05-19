@@ -1,0 +1,51 @@
+.carousel {
+  background: url("../img/cover.jpg") no-repeat top;
+  background-size: cover;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  &__content {
+    max-width: 450px;
+    h2 {
+      @include styleText($fs-4, $fw-bold-1, $color-white-0);
+      margin-bottom: $mg-1;
+    }
+    p {
+      @include styleText($fs-2 - 2, $fw-normal, $color-white-0);
+      line-height: 1.6;
+      margin-bottom: $mg-2;
+    }
+    .carousel__search {
+      position: relative;
+      flex-grow: 1;
+      .form-control {
+        @include styleText($fs-2, 300);
+        padding: 24px 12px;
+        background-color: $color-white-0;
+        border: 1px solid $color-white-0;
+        border-radius: $border-radius;
+        &:focus {
+          box-shadow: none;
+        }
+      }
+      button {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50px;
+        height: 50px;
+        color: $color-red-0;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+        z-index: 4;
+        &:hover {
+          color: $color-white-0;
+          background-color: $color-red-0;
+        }
+      }
+    }
+  }
+}

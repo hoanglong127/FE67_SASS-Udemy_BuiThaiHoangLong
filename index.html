@@ -1,0 +1,1728 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Layout Udemy</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <!-- GOOGLE FONT -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <!-- OWL CAROUSEL CSS -->
+    <link rel="stylesheet" href="./css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css" />
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <!-- HEADER START -->
+    <header class="header">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="header__sidebar d-flex col-2 col-sm-2 d-md-none">
+          <i class="fa fa-bars mr-2"></i>
+          <i class="fa fa-search"></i>
+        </div>
+        <div class="header__left col-8 col-sm-8 col-md-9 col-lg-9 col-xl-7">
+          <a class="navbar-brand" href="index.html">
+            <img src="./img/logo-coral.svg" alt="logo-coral.svg" />
+          </a>
+          <div class="header__categories">
+            <i class="fa fa-th"></i>
+            <span>Categories</span>
+          </div>
+          <div class="header__search input-group flex-nowrap">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Search for anything"
+              aria-label="Username"
+              aria-describedby="addon-wrapping"
+            />
+            <button>
+              <i class="fa fa-search"></i>
+            </button>
+          </div>
+        </div>
+        <div class="header__right col-2 col-sm-2 col-md-3 col-lg-3 col-xl-5">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link ude-business" href="#">Udemy for Business</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ude-teach" href="#">Teach on Udemy</a>
+            </li>
+            <li class="nav-item ude-border"></li>
+            <li class="nav-item">
+              <a class="nav-link ude-cart" href="#">
+                <i class="fa fa-shopping-cart"></i>
+              </a>
+            </li>
+            <li class="nav-item ude-buttons">
+              <a class="nav-link ude-login" href="#">Log In</a>
+              <a class="nav-link ude-signup" href="#">Sign Up</a>
+            </li>
+          </ul>
+        </div>
+        <!-- 
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+           -->
+      </nav>
+    </header>
+    <!-- END HEADER -->
+
+    <!-- CAROUSEL START -->
+    <section class="carousel">
+      <div class="container">
+        <div class="carousel__content">
+          <h2>Learn on your schedule</h2>
+          <p>
+            Study any topic, anytime. Choose from thousands of expert-led
+            courses now.
+          </p>
+          <div class="carousel__search input-group flex-nowrap">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="What do you want to learn?"
+              aria-label="Username"
+              aria-describedby="addon-wrapping"
+            />
+            <button>
+              <i class="fa fa-search"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END CAROUSEL -->
+
+    <!-- INTRO START -->
+    <section class="intro">
+      <div class="container">
+        <div class="intro__content row">
+          <div class="intro__item col-12 col-md-4 d-flex align-items-center">
+            <i class="fa fa-bullseye"></i>
+            <div class="intro__text">
+              <h4>100,000 online courses</h4>
+              <p>Explore a variety of fresh topics</p>
+            </div>
+          </div>
+          <div class="intro__item col-12 col-md-4 d-flex align-items-center">
+            <i class="fa fa-spinner"></i>
+            <div class="intro__text">
+              <h4>Expert instruction</h4>
+              <p>Find the right instructor for you</p>
+            </div>
+          </div>
+          <div class="intro__item col-12 col-md-4 d-flex align-items-center">
+            <i class="fa fa-sync"></i>
+            <div class="intro__text">
+              <h4>Lifetime access</h4>
+              <p>Learn on your schedule</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END INTRO -->
+
+    <!-- COURSES START -->
+    <section class="courses">
+      <div class="container">
+        <div class="courses__content row">
+          <div class="col-md-4">
+            <div class="courses__left">
+              <h2>The world’s largest selection of courses</h2>
+              <p>
+                Choose from over 100,000 online video courses with new additions
+                published every month
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-md-12 col-lg-8">
+            <div class="courses__right">
+              <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <a
+                    class="nav-link active"
+                    id="home-tab"
+                    data-toggle="tab"
+                    href="#bussiness"
+                    role="tab"
+                    aria-controls="bussiness"
+                    aria-selected="true"
+                    >Business</a
+                  >
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a
+                    class="nav-link"
+                    id="profile-tab"
+                    data-toggle="tab"
+                    href="#design"
+                    role="tab"
+                    aria-controls="design"
+                    aria-selected="false"
+                    >Design</a
+                  >
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a
+                    class="nav-link"
+                    id="contact-tab"
+                    data-toggle="tab"
+                    href="#photography"
+                    role="tab"
+                    aria-controls="photography"
+                    aria-selected="false"
+                    >Photography</a
+                  >
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a
+                    class="nav-link"
+                    id="contact-tab"
+                    data-toggle="tab"
+                    href="#development"
+                    role="tab"
+                    aria-controls="development"
+                    aria-selected="false"
+                    >Development</a
+                  >
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a
+                    class="nav-link"
+                    id="contact-tab"
+                    data-toggle="tab"
+                    href="#marketing"
+                    role="tab"
+                    aria-controls="marketing"
+                    aria-selected="false"
+                    >Marketing</a
+                  >
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a
+                    class="nav-link"
+                    id="contact-tab"
+                    data-toggle="tab"
+                    href="#it"
+                    role="tab"
+                    aria-controls="it"
+                    aria-selected="false"
+                    >IT & Software</a
+                  >
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a
+                    class="nav-link"
+                    id="contact-tab"
+                    data-toggle="tab"
+                    href="#personal"
+                    role="tab"
+                    aria-controls="personal"
+                    aria-selected="false"
+                    >Personal Development</a
+                  >
+                </li>
+              </ul>
+              <div class="tab-content" id="myTabContent">
+                <div
+                  class="tab-pane fade show active"
+                  id="bussiness"
+                  role="tabpanel"
+                  aria-labelledby="home-tab"
+                >
+                  <div class="courses__item owl-carousel owl-courses owl-theme">
+                    <div class="card item">
+                      <img
+                        src="./img/kh1.jpg"
+                        class="card-img-top"
+                        alt="kh1.jpg"
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">
+                          The Complete Foundation Stock Trading Coursed
+                        </h5>
+                        <p class="card-text">Mohsen Hassan</p>
+                        <div class="card-rating">
+                          <div class="card-star">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-alt"></i>
+                          </div>
+                          <span class="number">4.5</span>
+                          <span class="amount">(17,931)</span>
+                        </div>
+                        <div class="card-price">
+                          <span class="old-price">$134.99</span>
+                          <span class="new-price">$15.99</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card item">
+                      <img
+                        src="./img/kh2.jpg"
+                        class="card-img-top"
+                        alt="kh2.jpg"
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">
+                          The Complete Foundation Stock Trading Course
+                        </h5>
+                        <p class="card-text">Mohsen Hassan</p>
+                        <div class="card-rating">
+                          <div class="card-star">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-alt"></i>
+                          </div>
+                          <span class="number">4.5</span>
+                          <span class="amount">(17,931)</span>
+                        </div>
+                        <div class="card-price">
+                          <span class="old-price">$134.99</span>
+                          <span class="new-price">$15.99</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card item">
+                      <img
+                        src="./img/kh3.jpg"
+                        class="card-img-top"
+                        alt="kh3.jpg"
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">
+                          The Complete Foundation Stock Trading Course
+                        </h5>
+                        <p class="card-text">Mohsen Hassan</p>
+                        <div class="card-rating">
+                          <div class="card-star">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-alt"></i>
+                          </div>
+                          <span class="number">4.5</span>
+                          <span class="amount">(17,931)</span>
+                        </div>
+                        <div class="card-price">
+                          <span class="old-price">$134.99</span>
+                          <span class="new-price">$15.99</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card item">
+                      <img
+                        src="./img/kh4.jpg"
+                        class="card-img-top"
+                        alt="kh4.jpg"
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">
+                          The Complete Foundation Stock Trading Course
+                        </h5>
+                        <p class="card-text">Mohsen Hassan</p>
+                        <div class="card-rating">
+                          <div class="card-star">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-alt"></i>
+                          </div>
+                          <span class="number">4.5</span>
+                          <span class="amount">(17,931)</span>
+                        </div>
+                        <div class="card-price">
+                          <span class="old-price">$134.99</span>
+                          <span class="new-price">$15.99</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="design"
+                  role="tabpanel"
+                  aria-labelledby="profile-tab"
+                >
+                  <div class="courses__item owl-carousel owl-courses owl-theme">
+                    <div class="card item">
+                      <img
+                        src="./img/kh5.jpg"
+                        class="card-img-top"
+                        alt="kh5.jpg"
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">
+                          The Complete Foundation Stock Trading Course
+                        </h5>
+                        <p class="card-text">Mohsen Hassan</p>
+                        <div class="card-rating">
+                          <div class="card-star">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-alt"></i>
+                          </div>
+                          <span class="number">4.5</span>
+                          <span class="amount">(17,931)</span>
+                        </div>
+                        <div class="card-price">
+                          <span class="old-price">$134.99</span>
+                          <span class="new-price">$15.99</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card item">
+                      <img
+                        src="./img/kh6.jpg"
+                        class="card-img-top"
+                        alt="kh6.jpg"
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">
+                          The Complete Foundation Stock Trading Course
+                        </h5>
+                        <p class="card-text">Mohsen Hassan</p>
+                        <div class="card-rating">
+                          <div class="card-star">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-alt"></i>
+                          </div>
+                          <span class="number">4.5</span>
+                          <span class="amount">(17,931)</span>
+                        </div>
+                        <div class="card-price">
+                          <span class="old-price">$134.99</span>
+                          <span class="new-price">$15.99</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card item">
+                      <img
+                        src="./img/kh8.jpg"
+                        class="card-img-top"
+                        alt="kh8.jpg"
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">
+                          The Complete Foundation Stock Trading Course
+                        </h5>
+                        <p class="card-text">Mohsen Hassan</p>
+                        <div class="card-rating">
+                          <div class="card-star">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-alt"></i>
+                          </div>
+                          <span class="number">4.5</span>
+                          <span class="amount">(17,931)</span>
+                        </div>
+                        <div class="card-price">
+                          <span class="old-price">$134.99</span>
+                          <span class="new-price">$15.99</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card item">
+                      <img
+                        src="./img/kh9.jpg"
+                        class="card-img-top"
+                        alt="kh9.jpg"
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">
+                          The Complete Foundation Stock Trading Course
+                        </h5>
+                        <p class="card-text">Mohsen Hassan</p>
+                        <div class="card-rating">
+                          <div class="card-star">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-alt"></i>
+                          </div>
+                          <span class="number">4.5</span>
+                          <span class="amount">(17,931)</span>
+                        </div>
+                        <div class="card-price">
+                          <span class="old-price">$134.99</span>
+                          <span class="new-price">$15.99</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="photography"
+                  role="tabpanel"
+                  aria-labelledby="contact-tab"
+                >
+                  <div class="courses__item owl-carousel owl-courses owl-theme">
+                    <div class="card item">
+                      <img
+                        src="./img/kh10.jpg"
+                        class="card-img-top"
+                        alt="kh10.jpg"
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">
+                          The Complete Foundation Stock Trading Course
+                        </h5>
+                        <p class="card-text">Mohsen Hassan</p>
+                        <div class="card-rating">
+                          <div class="card-star">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-alt"></i>
+                          </div>
+                          <span class="number">4.5</span>
+                          <span class="amount">(17,931)</span>
+                        </div>
+                        <div class="card-price">
+                          <span class="old-price">$134.99</span>
+                          <span class="new-price">$15.99</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card item">
+                      <img
+                        src="./img/kh11.jpg"
+                        class="card-img-top"
+                        alt="kh11.jpg"
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">
+                          The Complete Foundation Stock Trading Course
+                        </h5>
+                        <p class="card-text">Mohsen Hassan</p>
+                        <div class="card-rating">
+                          <div class="card-star">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-alt"></i>
+                          </div>
+                          <span class="number">4.5</span>
+                          <span class="amount">(17,931)</span>
+                        </div>
+                        <div class="card-price">
+                          <span class="old-price">$134.99</span>
+                          <span class="new-price">$15.99</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card item">
+                      <img
+                        src="./img/kh12.jpg"
+                        class="card-img-top"
+                        alt="kh12.jpg"
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">
+                          The Complete Foundation Stock Trading Course
+                        </h5>
+                        <p class="card-text">Mohsen Hassan</p>
+                        <div class="card-rating">
+                          <div class="card-star">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-alt"></i>
+                          </div>
+                          <span class="number">4.5</span>
+                          <span class="amount">(17,931)</span>
+                        </div>
+                        <div class="card-price">
+                          <span class="old-price">$134.99</span>
+                          <span class="new-price">$15.99</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card item">
+                      <img
+                        src="./img/kh13.jpg"
+                        class="card-img-top"
+                        alt="kh13.jpg"
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">
+                          The Complete Foundation Stock Trading Course
+                        </h5>
+                        <p class="card-text">Mohsen Hassan</p>
+                        <div class="card-rating">
+                          <div class="card-star">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-alt"></i>
+                          </div>
+                          <span class="number">4.5</span>
+                          <span class="amount">(17,931)</span>
+                        </div>
+                        <div class="card-price">
+                          <span class="old-price">$134.99</span>
+                          <span class="new-price">$15.99</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="development"
+                  role="tabpanel"
+                  aria-labelledby="contact-tab"
+                >
+                  <div class="courses__item owl-carousel owl-courses owl-theme">
+                    <div class="card item">
+                      <img
+                        src="./img/kh1.jpg"
+                        class="card-img-top"
+                        alt="kh1.jpg"
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">
+                          The Complete Foundation Stock Trading Coursed
+                        </h5>
+                        <p class="card-text">Mohsen Hassan</p>
+                        <div class="card-rating">
+                          <div class="card-star">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-alt"></i>
+                          </div>
+                          <span class="number">4.5</span>
+                          <span class="amount">(17,931)</span>
+                        </div>
+                        <div class="card-price">
+                          <span class="old-price">$134.99</span>
+                          <span class="new-price">$15.99</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card item">
+                      <img
+                        src="./img/kh2.jpg"
+                        class="card-img-top"
+                        alt="kh2.jpg"
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">
+                          The Complete Foundation Stock Trading Course
+                        </h5>
+                        <p class="card-text">Mohsen Hassan</p>
+                        <div class="card-rating">
+                          <div class="card-star">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-alt"></i>
+                          </div>
+                          <span class="number">4.5</span>
+                          <span class="amount">(17,931)</span>
+                        </div>
+                        <div class="card-price">
+                          <span class="old-price">$134.99</span>
+                          <span class="new-price">$15.99</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card item">
+                      <img
+                        src="./img/kh3.jpg"
+                        class="card-img-top"
+                        alt="kh3.jpg"
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">
+                          The Complete Foundation Stock Trading Course
+                        </h5>
+                        <p class="card-text">Mohsen Hassan</p>
+                        <div class="card-rating">
+                          <div class="card-star">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-alt"></i>
+                          </div>
+                          <span class="number">4.5</span>
+                          <span class="amount">(17,931)</span>
+                        </div>
+                        <div class="card-price">
+                          <span class="old-price">$134.99</span>
+                          <span class="new-price">$15.99</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card item">
+                      <img
+                        src="./img/kh4.jpg"
+                        class="card-img-top"
+                        alt="kh4.jpg"
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">
+                          The Complete Foundation Stock Trading Course
+                        </h5>
+                        <p class="card-text">Mohsen Hassan</p>
+                        <div class="card-rating">
+                          <div class="card-star">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-alt"></i>
+                          </div>
+                          <span class="number">4.5</span>
+                          <span class="amount">(17,931)</span>
+                        </div>
+                        <div class="card-price">
+                          <span class="old-price">$134.99</span>
+                          <span class="new-price">$15.99</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="marketing"
+                  role="tabpanel"
+                  aria-labelledby="contact-tab"
+                >
+                  <div class="courses__item owl-carousel owl-courses owl-theme">
+                    <div class="card item">
+                      <img
+                        src="./img/kh5.jpg"
+                        class="card-img-top"
+                        alt="kh5.jpg"
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">
+                          The Complete Foundation Stock Trading Course
+                        </h5>
+                        <p class="card-text">Mohsen Hassan</p>
+                        <div class="card-rating">
+                          <div class="card-star">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-alt"></i>
+                          </div>
+                          <span class="number">4.5</span>
+                          <span class="amount">(17,931)</span>
+                        </div>
+                        <div class="card-price">
+                          <span class="old-price">$134.99</span>
+                          <span class="new-price">$15.99</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card item">
+                      <img
+                        src="./img/kh6.jpg"
+                        class="card-img-top"
+                        alt="kh6.jpg"
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">
+                          The Complete Foundation Stock Trading Course
+                        </h5>
+                        <p class="card-text">Mohsen Hassan</p>
+                        <div class="card-rating">
+                          <div class="card-star">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-alt"></i>
+                          </div>
+                          <span class="number">4.5</span>
+                          <span class="amount">(17,931)</span>
+                        </div>
+                        <div class="card-price">
+                          <span class="old-price">$134.99</span>
+                          <span class="new-price">$15.99</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card item">
+                      <img
+                        src="./img/kh8.jpg"
+                        class="card-img-top"
+                        alt="kh8.jpg"
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">
+                          The Complete Foundation Stock Trading Course
+                        </h5>
+                        <p class="card-text">Mohsen Hassan</p>
+                        <div class="card-rating">
+                          <div class="card-star">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-alt"></i>
+                          </div>
+                          <span class="number">4.5</span>
+                          <span class="amount">(17,931)</span>
+                        </div>
+                        <div class="card-price">
+                          <span class="old-price">$134.99</span>
+                          <span class="new-price">$15.99</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card item">
+                      <img
+                        src="./img/kh9.jpg"
+                        class="card-img-top"
+                        alt="kh9.jpg"
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">
+                          The Complete Foundation Stock Trading Course
+                        </h5>
+                        <p class="card-text">Mohsen Hassan</p>
+                        <div class="card-rating">
+                          <div class="card-star">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-alt"></i>
+                          </div>
+                          <span class="number">4.5</span>
+                          <span class="amount">(17,931)</span>
+                        </div>
+                        <div class="card-price">
+                          <span class="old-price">$134.99</span>
+                          <span class="new-price">$15.99</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="it"
+                  role="tabpanel"
+                  aria-labelledby="contact-tab"
+                >
+                  <div class="courses__item owl-carousel owl-courses owl-theme">
+                    <div class="card item">
+                      <img
+                        src="./img/kh10.jpg"
+                        class="card-img-top"
+                        alt="kh10.jpg"
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">
+                          The Complete Foundation Stock Trading Course
+                        </h5>
+                        <p class="card-text">Mohsen Hassan</p>
+                        <div class="card-rating">
+                          <div class="card-star">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-alt"></i>
+                          </div>
+                          <span class="number">4.5</span>
+                          <span class="amount">(17,931)</span>
+                        </div>
+                        <div class="card-price">
+                          <span class="old-price">$134.99</span>
+                          <span class="new-price">$15.99</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card item">
+                      <img
+                        src="./img/kh11.jpg"
+                        class="card-img-top"
+                        alt="kh11.jpg"
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">
+                          The Complete Foundation Stock Trading Course
+                        </h5>
+                        <p class="card-text">Mohsen Hassan</p>
+                        <div class="card-rating">
+                          <div class="card-star">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-alt"></i>
+                          </div>
+                          <span class="number">4.5</span>
+                          <span class="amount">(17,931)</span>
+                        </div>
+                        <div class="card-price">
+                          <span class="old-price">$134.99</span>
+                          <span class="new-price">$15.99</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card item">
+                      <img
+                        src="./img/kh12.jpg"
+                        class="card-img-top"
+                        alt="kh12.jpg"
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">
+                          The Complete Foundation Stock Trading Course
+                        </h5>
+                        <p class="card-text">Mohsen Hassan</p>
+                        <div class="card-rating">
+                          <div class="card-star">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-alt"></i>
+                          </div>
+                          <span class="number">4.5</span>
+                          <span class="amount">(17,931)</span>
+                        </div>
+                        <div class="card-price">
+                          <span class="old-price">$134.99</span>
+                          <span class="new-price">$15.99</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card item">
+                      <img
+                        src="./img/kh13.jpg"
+                        class="card-img-top"
+                        alt="kh13.jpg"
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">
+                          The Complete Foundation Stock Trading Course
+                        </h5>
+                        <p class="card-text">Mohsen Hassan</p>
+                        <div class="card-rating">
+                          <div class="card-star">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-alt"></i>
+                          </div>
+                          <span class="number">4.5</span>
+                          <span class="amount">(17,931)</span>
+                        </div>
+                        <div class="card-price">
+                          <span class="old-price">$134.99</span>
+                          <span class="new-price">$15.99</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="personal"
+                  role="tabpanel"
+                  aria-labelledby="contact-tab"
+                >
+                  <div class="courses__item owl-carousel owl-courses owl-theme">
+                    <div class="card item">
+                      <img
+                        src="./img/kh1.jpg"
+                        class="card-img-top"
+                        alt="kh1.jpg"
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">
+                          The Complete Foundation Stock Trading Coursed
+                        </h5>
+                        <p class="card-text">Mohsen Hassan</p>
+                        <div class="card-rating">
+                          <div class="card-star">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-alt"></i>
+                          </div>
+                          <span class="number">4.5</span>
+                          <span class="amount">(17,931)</span>
+                        </div>
+                        <div class="card-price">
+                          <span class="old-price">$134.99</span>
+                          <span class="new-price">$15.99</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card item">
+                      <img
+                        src="./img/kh2.jpg"
+                        class="card-img-top"
+                        alt="kh2.jpg"
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">
+                          The Complete Foundation Stock Trading Course
+                        </h5>
+                        <p class="card-text">Mohsen Hassan</p>
+                        <div class="card-rating">
+                          <div class="card-star">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-alt"></i>
+                          </div>
+                          <span class="number">4.5</span>
+                          <span class="amount">(17,931)</span>
+                        </div>
+                        <div class="card-price">
+                          <span class="old-price">$134.99</span>
+                          <span class="new-price">$15.99</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card item">
+                      <img
+                        src="./img/kh3.jpg"
+                        class="card-img-top"
+                        alt="kh3.jpg"
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">
+                          The Complete Foundation Stock Trading Course
+                        </h5>
+                        <p class="card-text">Mohsen Hassan</p>
+                        <div class="card-rating">
+                          <div class="card-star">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-alt"></i>
+                          </div>
+                          <span class="number">4.5</span>
+                          <span class="amount">(17,931)</span>
+                        </div>
+                        <div class="card-price">
+                          <span class="old-price">$134.99</span>
+                          <span class="new-price">$15.99</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card item">
+                      <img
+                        src="./img/kh4.jpg"
+                        class="card-img-top"
+                        alt="kh4.jpg"
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">
+                          The Complete Foundation Stock Trading Course
+                        </h5>
+                        <p class="card-text">Mohsen Hassan</p>
+                        <div class="card-rating">
+                          <div class="card-star">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-alt"></i>
+                          </div>
+                          <span class="number">4.5</span>
+                          <span class="amount">(17,931)</span>
+                        </div>
+                        <div class="card-price">
+                          <span class="old-price">$134.99</span>
+                          <span class="new-price">$15.99</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END COURSES -->
+
+    <!-- SERVICES START -->
+    <section class="services">
+      <div class="container">
+        <div class="services__content row owl-carousel owl-services owl-theme">
+          <div class="services__item item d-flex">
+            <img
+              src="https://web.archive.org/web/20200629105941/https://i.udemycdn.com/browse_components/value-props-unit/go_own_pace.svg"
+              alt="services-icon"
+            />
+            <div class="services__text">
+              <h4>Go at your own pace</h4>
+              <p>Enjoy lifetime access to courses on Udemy’s website and app</p>
+            </div>
+          </div>
+          <div class="services__item item d-flex">
+            <img
+              src="https://web.archive.org/web/20200629105941/https://i.udemycdn.com/browse_components/value-props-unit/learn_from_experts.svg"
+              alt="services-icon"
+            />
+            <div class="services__text">
+              <h4>Learn from industry experts</h4>
+              <p>Select from top instructors around the world</p>
+            </div>
+          </div>
+          <div class="services__item item d-flex">
+            <img
+              src="https://web.archive.org/web/20200629105941/https://i.udemycdn.com/browse_components/value-props-unit/video_courses.svg"
+              alt="services-icon"
+            />
+            <div class="services__text">
+              <h4>Find video courses on almost any topic</h4>
+              <p>Build your library for your career and personal growth</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END SERVICES -->
+
+    <section class="students">
+      <div class="container">
+        <h3 class="students__title">Students are viewing</h3>
+        <div class="students__content">
+          <div class="students__item owl-carousel owl-students owl-theme">
+            <div class="card item">
+              <img src="./img/kh1.jpg" class="card-img-top" alt="kh1.jpg" />
+              <div class="card-body">
+                <h5 class="card-title">
+                  The Complete Foundation Stock Trading Coursed
+                </h5>
+                <p class="card-text">Mohsen Hassan</p>
+                <div class="card-rating">
+                  <div class="card-star">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-alt"></i>
+                  </div>
+                  <span class="number">4.5</span>
+                  <span class="amount">(17,931)</span>
+                </div>
+                <div class="card-price">
+                  <span class="old-price">$134.99</span>
+                  <span class="new-price">$15.99</span>
+                </div>
+              </div>
+            </div>
+            <div class="card item">
+              <img src="./img/kh2.jpg" class="card-img-top" alt="kh2.jpg" />
+              <div class="card-body">
+                <h5 class="card-title">
+                  The Complete Foundation Stock Trading Course
+                </h5>
+                <p class="card-text">Mohsen Hassan</p>
+                <div class="card-rating">
+                  <div class="card-star">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-alt"></i>
+                  </div>
+                  <span class="number">4.5</span>
+                  <span class="amount">(17,931)</span>
+                </div>
+                <div class="card-price">
+                  <span class="old-price">$134.99</span>
+                  <span class="new-price">$15.99</span>
+                </div>
+              </div>
+            </div>
+            <div class="card item">
+              <img src="./img/kh3.jpg" class="card-img-top" alt="kh3.jpg" />
+              <div class="card-body">
+                <h5 class="card-title">
+                  The Complete Foundation Stock Trading Course
+                </h5>
+                <p class="card-text">Mohsen Hassan</p>
+                <div class="card-rating">
+                  <div class="card-star">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-alt"></i>
+                  </div>
+                  <span class="number">4.5</span>
+                  <span class="amount">(17,931)</span>
+                </div>
+                <div class="card-price">
+                  <span class="old-price">$134.99</span>
+                  <span class="new-price">$15.99</span>
+                </div>
+              </div>
+            </div>
+            <div class="card item">
+              <img src="./img/kh4.jpg" class="card-img-top" alt="kh4.jpg" />
+              <div class="card-body">
+                <h5 class="card-title">
+                  The Complete Foundation Stock Trading Course
+                </h5>
+                <p class="card-text">Mohsen Hassan</p>
+                <div class="card-rating">
+                  <div class="card-star">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-alt"></i>
+                  </div>
+                  <span class="number">4.5</span>
+                  <span class="amount">(17,931)</span>
+                </div>
+                <div class="card-price">
+                  <span class="old-price">$134.99</span>
+                  <span class="new-price">$15.99</span>
+                </div>
+              </div>
+            </div>
+            <div class="card item">
+              <img src="./img/kh5.jpg" class="card-img-top" alt="kh5.jpg" />
+              <div class="card-body">
+                <h5 class="card-title">
+                  The Complete Foundation Stock Trading Course
+                </h5>
+                <p class="card-text">Mohsen Hassan</p>
+                <div class="card-rating">
+                  <div class="card-star">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-alt"></i>
+                  </div>
+                  <span class="number">4.5</span>
+                  <span class="amount">(17,931)</span>
+                </div>
+                <div class="card-price">
+                  <span class="old-price">$134.99</span>
+                  <span class="new-price">$15.99</span>
+                </div>
+              </div>
+            </div>
+            <div class="card item">
+              <img src="./img/kh6.jpg" class="card-img-top" alt="kh6.jpg" />
+              <div class="card-body">
+                <h5 class="card-title">
+                  The Complete Foundation Stock Trading Course
+                </h5>
+                <p class="card-text">Mohsen Hassan</p>
+                <div class="card-rating">
+                  <div class="card-star">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-alt"></i>
+                  </div>
+                  <span class="number">4.5</span>
+                  <span class="amount">(17,931)</span>
+                </div>
+                <div class="card-price">
+                  <span class="old-price">$134.99</span>
+                  <span class="new-price">$15.99</span>
+                </div>
+              </div>
+            </div>
+            <div class="card item">
+              <img src="./img/kh8.jpg" class="card-img-top" alt="kh8.jpg" />
+              <div class="card-body">
+                <h5 class="card-title">
+                  The Complete Foundation Stock Trading Course
+                </h5>
+                <p class="card-text">Mohsen Hassan</p>
+                <div class="card-rating">
+                  <div class="card-star">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-alt"></i>
+                  </div>
+                  <span class="number">4.5</span>
+                  <span class="amount">(17,931)</span>
+                </div>
+                <div class="card-price">
+                  <span class="old-price">$134.99</span>
+                  <span class="new-price">$15.99</span>
+                </div>
+              </div>
+            </div>
+            <div class="card item">
+              <img src="./img/kh9.jpg" class="card-img-top" alt="kh9.jpg" />
+              <div class="card-body">
+                <h5 class="card-title">
+                  The Complete Foundation Stock Trading Course
+                </h5>
+                <p class="card-text">Mohsen Hassan</p>
+                <div class="card-rating">
+                  <div class="card-star">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-alt"></i>
+                  </div>
+                  <span class="number">4.5</span>
+                  <span class="amount">(17,931)</span>
+                </div>
+                <div class="card-price">
+                  <span class="old-price">$134.99</span>
+                  <span class="new-price">$15.99</span>
+                </div>
+              </div>
+            </div>
+            <div class="card item">
+              <img src="./img/kh10.jpg" class="card-img-top" alt="kh10.jpg" />
+              <div class="card-body">
+                <h5 class="card-title">
+                  The Complete Foundation Stock Trading Course
+                </h5>
+                <p class="card-text">Mohsen Hassan</p>
+                <div class="card-rating">
+                  <div class="card-star">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-alt"></i>
+                  </div>
+                  <span class="number">4.5</span>
+                  <span class="amount">(17,931)</span>
+                </div>
+                <div class="card-price">
+                  <span class="old-price">$134.99</span>
+                  <span class="new-price">$15.99</span>
+                </div>
+              </div>
+            </div>
+            <div class="card item">
+              <img src="./img/kh11.jpg" class="card-img-top" alt="kh11.jpg" />
+              <div class="card-body">
+                <h5 class="card-title">
+                  The Complete Foundation Stock Trading Course
+                </h5>
+                <p class="card-text">Mohsen Hassan</p>
+                <div class="card-rating">
+                  <div class="card-star">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-alt"></i>
+                  </div>
+                  <span class="number">4.5</span>
+                  <span class="amount">(17,931)</span>
+                </div>
+                <div class="card-price">
+                  <span class="old-price">$134.99</span>
+                  <span class="new-price">$15.99</span>
+                </div>
+              </div>
+            </div>
+            <div class="card item">
+              <img src="./img/kh12.jpg" class="card-img-top" alt="kh12.jpg" />
+              <div class="card-body">
+                <h5 class="card-title">
+                  The Complete Foundation Stock Trading Course
+                </h5>
+                <p class="card-text">Mohsen Hassan</p>
+                <div class="card-rating">
+                  <div class="card-star">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-alt"></i>
+                  </div>
+                  <span class="number">4.5</span>
+                  <span class="amount">(17,931)</span>
+                </div>
+                <div class="card-price">
+                  <span class="old-price">$134.99</span>
+                  <span class="new-price">$15.99</span>
+                </div>
+              </div>
+            </div>
+            <div class="card item">
+              <img src="./img/kh13.jpg" class="card-img-top" alt="kh13.jpg" />
+              <div class="card-body">
+                <h5 class="card-title">
+                  The Complete Foundation Stock Trading Course
+                </h5>
+                <p class="card-text">Mohsen Hassan</p>
+                <div class="card-rating">
+                  <div class="card-star">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-alt"></i>
+                  </div>
+                  <span class="number">4.5</span>
+                  <span class="amount">(17,931)</span>
+                </div>
+                <div class="card-price">
+                  <span class="old-price">$134.99</span>
+                  <span class="new-price">$15.99</span>
+                </div>
+              </div>
+            </div>
+            <div class="card item">
+              <img src="./img/kh14.jpg" class="card-img-top" alt="kh14.jpg" />
+              <div class="card-body">
+                <h5 class="card-title">
+                  The Complete Foundation Stock Trading Course
+                </h5>
+                <p class="card-text">Mohsen Hassan</p>
+                <div class="card-rating">
+                  <div class="card-star">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-alt"></i>
+                  </div>
+                  <span class="number">4.5</span>
+                  <span class="amount">(17,931)</span>
+                </div>
+                <div class="card-price">
+                  <span class="old-price">$134.99</span>
+                  <span class="new-price">$15.99</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BANNER START -->
+    <section class="banner">
+      <div class="banner__border"></div>
+      <div class="container">
+        <div class="banner__content">
+          <h3>Get personalized recommendations</h3>
+          <p>Answer a few questions for your top picks</p>
+          <button href="#" class="ude-btnStart">Get started</button>
+        </div>
+      </div>
+    </section>
+    <!-- END BANNER -->
+
+    <!-- TOP CATEGORIES START -->
+    <section class="topCategories">
+      <div class="container">
+        <h3 class="topCategories__title">Top categories</h3>
+        <div class="topCategories__content row">
+          <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+            <div class="topCategories__item d-flex align-items-center">
+              <img src="./img/web-programming.png" alt="web-programming.png" />
+              <span>Development</span>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+            <div class="topCategories__item d-flex align-items-center">
+              <img src="./img/analytics.png" alt="analytics.png" />
+              <span>Business</span>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+            <div class="topCategories__item d-flex align-items-center">
+              <img src="./img/desktop.png" alt="desktop.png" />
+              <span>IT and Software</span>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+            <div class="topCategories__item d-flex align-items-center">
+              <img src="./img/design-tools.png" alt="design-tools.png" />
+              <span>Design</span>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+            <div class="topCategories__item d-flex align-items-center">
+              <img src="./img/dartboard.png" alt="dartboard.png" />
+              <span>Marketing</span>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+            <div class="topCategories__item d-flex align-items-center">
+              <img src="./img/book.png" alt="book.png" />
+              <span>Personal Development</span>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+            <div class="topCategories__item d-flex align-items-center">
+              <img src="./img/camera.png" alt="camera.png" />
+              <span>Photography</span>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+            <div class="topCategories__item d-flex align-items-center">
+              <img src="./img/music-notes.png" alt="music-notes.png" />
+              <span>Music</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END TOP CATEGORIES -->
+
+    <!-- FEEDBACK START -->
+    <section class="feedback">
+      <div class="container">
+        <h3 class="feedback__title">What our students have to say</h3>
+        <div class="feedback__content owl-carousel owl-feedback owl-theme">
+          <div class="feedback__item item">
+            <div class="feedback__user">
+              <img src="./img/user1.jpg" alt="user1.jpg" />
+              <h5>Borivoje</h5>
+            </div>
+            <p>
+              Udemy is a life saver. I don't have the time or money for a
+              college education. My goal is to become a freelance web developer,
+              and thanks to Udemy, I'm really close.
+            </p>
+          </div>
+          <div class="feedback__item item">
+            <div class="feedback__user">
+              <img src="./img/user2.jpg" alt="user2.jpg" />
+              <h5>Dipesh</h5>
+            </div>
+            <p>
+              I believe in lifelong learning and Udemy is a great place to learn
+              from experts. I've learned a lot and recommend it to all my
+              friends.
+            </p>
+          </div>
+          <div class="feedback__item item">
+            <div class="feedback__user">
+              <img src="./img/user4.jpg" alt="user4.jpg" />
+              <h5>Kathy</h5>
+            </div>
+            <p>
+              My children and I LOVE Udemy! The courses are fantastic and the
+              instructors are so fun and knowledgeable. I only wish we found it
+              sooner.
+            </p>
+          </div>
+          <div class="feedback__item item">
+            <div class="feedback__user">
+              <img src="./img/user3.jpg" alt="user3.jpg" />
+              <h5>Zulaika</h5>
+            </div>
+            <p>
+              I work in project management and joined Udemy because I get great
+              courses for less. The instructors are fantastic, interesting, and
+              helpful.
+            </p>
+          </div>
+          <div class="feedback__item item">
+            <div class="feedback__user">
+              <img src="./img/user4.jpg" alt="user4.jpg" />
+              <h5>Marco</h5>
+            </div>
+            <p>
+              Thank you Udemy! You've renewed my passion for learning and my
+              dream of becoming a web developer.
+            </p>
+          </div>
+          <div class="feedback__item item">
+            <div class="feedback__user">
+              <img src="./img/user2.jpg" alt="user2.jpg" />
+              <h5>Justin</h5>
+            </div>
+            <p>
+              The best part about Udemy is the selection. You can find a course
+              for anything you want to learn!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END FEEDBACK -->
+
+    <!-- COMPANIES START -->
+    <section class="companies">
+      <div class="container">
+        <div class="companies__top">
+          <p>Trusted by companies of all sizes</p>
+          <div class="companies__images">
+            <img src="./img/booking.svg" alt="booking.svg" />
+            <img src="./img/volkswagen.svg" alt="volkswagen.svg" />
+            <img src="./img/mercedes.svg" alt="mercedes.svg" />
+            <img src="./img/pinterest.svg" alt="pinterest.svg" />
+            <img src="./img/adidas.svg" alt="adidas.svg" />
+            <img src="./img/paypal.svg" alt="paypal.svg" />
+          </div>
+        </div>
+        <div class="companies__content row">
+          <div class="companies__item col-12 col-md-6">
+            <div class="companies__text">
+              <h4>Become an instructor</h4>
+              <p>
+                Top instructors from around the world teach millions of students
+                on Udemy. We provide the tools and skills to teach what you
+                love.
+              </p>
+              <button class="ude-btnComapanies">Start teaching today</button>
+            </div>
+          </div>
+          <div class="companies__item col-12 col-md-6">
+            <div class="companies__text">
+              <h4>Udemy for Business</h4>
+              <p>
+                Get unlimited access to 4,000+ of Udemy’s top courses for your
+                team.
+              </p>
+              <button class="ude-btnComapanies">Get Udemy for Business</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END COMPANIES -->
+
+    <!-- FOOTER START -->
+    <footer class="footer">
+      <div class="container-fluid">
+        <div class="footer__top">
+          <div class="row">
+            <div class="footer__item col-12 col-md-3">
+              <a href="#" class="ude-business">Udemy for Business</a>
+              <a href="#" class="ude-teach">Teach on Udemy</a>
+              <a href="#">Udemy app</a>
+              <a href="#">About us</a>
+            </div>
+            <div class="footer__item col-12 col-md-3">
+              <a href="#">Contact us</a>
+              <a href="#">Careers</a>
+              <a href="#">Blog</a>
+              <a href="#">Help and Support</a>
+            </div>
+            <div class="footer__item col-12 col-md-3">
+              <a href="#">Affiliate</a>
+              <a href="#">Sitemap</a>
+              <a href="#">Featured courses</a>
+            </div>
+            <div class="footer__item col-12 col-md-3">
+              <select class="form-control" id="exampleFormControlSelect1">
+                <option>English</option>
+                <option>Vietnamese</option>
+                <option>Japanese</option>
+                <option>France</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <div class="left">
+            <img src="./img/logo-coral.svg" alt="logo-coral.svg" />
+            <span>Copyright &copy; 2020 Udemy, Inc.</span>
+          </div>
+          <div class="right">
+            <a href="#" class="footer__link">Terms</a>
+            <a href="#">Privacy Policy and Cookie Policy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- END FOOTER -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- OWL CAROUSEL -->
+    <script src="./js/owl.carousel.min.js"></script>
+    <!-- MAIN JS -->
+    <script src="./js/main.js"></script>
+  </body>
+</html>

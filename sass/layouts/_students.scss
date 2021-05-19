@@ -1,0 +1,76 @@
+.students {
+  padding: $pd-2 0;
+  &__title {
+    @include styleText($fs-2 - 1, $fw-normal, $color-black-light);
+  }
+  &__item {
+    .card .card-body {
+      padding: $pd-1 + 5;
+    }
+    .card .card-title {
+      @include styleText($fs-0, $fw-bold-1, $color-black-0);
+      line-height: 1.4;
+      margin-bottom: $mg-1;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      word-break: break-word;
+    }
+    .card .card-text {
+      @include styleText($fs-1 - 1, $fw-normal, $color-gray-4);
+      margin-bottom: $mg-1 + 5;
+    }
+
+    .card .card-rating {
+      display: flex;
+      align-items: center;
+      font-size: $fs-1;
+      margin-bottom: $mg-1;
+    }
+
+    .card .card-star {
+      color: $color-yellow;
+      margin-right: 5px;
+    }
+
+    .card .card-rating .number {
+      font-size: $fs-1 + 1;
+      font-weight: $fw-bold-1;
+      margin-right: 5px;
+    }
+
+    .card .card-rating .amount {
+      @include styleText($fs-1 - 1, $fw-normal, $color-gray-4);
+    }
+
+    .card .card-price {
+      text-align: right;
+    }
+
+    .card .card-price .old-price {
+      font-size: $fs-1;
+      text-decoration: line-through;
+      margin-right: 5px;
+    }
+
+    .card .card-price .new-price {
+      @include styleText($fs-2 - 2, $fw-bold-1, $color-black-0);
+    }
+  }
+  .owl-prev {
+    left: -3%;
+  }
+  .owl-next {
+    right: -3%;
+  }
+}
+
+@include responsive("medium") {
+  .students {
+    .card-rating {
+      flex-wrap: wrap;
+    }
+  }
+}

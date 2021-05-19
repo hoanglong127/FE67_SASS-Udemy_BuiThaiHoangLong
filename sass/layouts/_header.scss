@@ -1,0 +1,178 @@
+.header__left {
+  display: flex;
+  align-items: center;
+
+  .navbar-brand {
+    margin: 0;
+    padding: 0;
+    img {
+      width: 110px;
+    }
+  }
+
+  .header__categories {
+    @include styleText($fs-1, $fw-normal, $color-black-light);
+    display: flex;
+    margin: 0 $mg-1;
+    padding: 12px 15px;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    &:hover {
+      background-color: $color-gray-1;
+      border-color: $color-gray-1;
+    }
+    i {
+      margin-top: 2px;
+      margin-right: $mg-0;
+    }
+  }
+
+  .header__search {
+    position: relative;
+    flex-grow: 1;
+    .form-control {
+      @include styleText($fs-1);
+      padding: $pd-2 12px;
+      background-color: $color-gray-1;
+      border: 1px solid $color-gray-1;
+      border-radius: $border-radius;
+      &:focus {
+        background-color: transparent;
+        border: 1px solid $color-gray-6;
+        box-shadow: none;
+      }
+    }
+    button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 42px;
+      height: 42px;
+      color: $color-red-0;
+      background-color: transparent;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
+      z-index: 4;
+      &:hover {
+        color: $color-white-0;
+        background-color: $color-red-0;
+      }
+    }
+  }
+}
+
+.header__right {
+  .navbar-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    .nav-link {
+      @include styleText($fs-1, $fw-normal, $color-black-light);
+    }
+    .nav-link:hover {
+      color: $color-black-light;
+    }
+  }
+
+  .ude-business,
+  .ude-teach {
+    padding: 12px 15px;
+    border: 1px solid transparent;
+    border-radius: $border-radius;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      background-color: $color-gray-1;
+      border-color: $color-gray-1;
+    }
+  }
+
+  .ude-border {
+    height: 30px;
+    border-left: 1px solid $color-gray-6;
+  }
+
+  .ude-cart {
+    padding: 0;
+    height: 45px;
+    width: 45px;
+    line-height: 45px;
+    text-align: center;
+    font-size: 30px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    transition: all 0.2s linear;
+    &:hover {
+      background-color: $color-gray-1;
+      border-color: $color-gray-1;
+    }
+  }
+
+  .ude-buttons {
+    display: flex;
+    .ude-login {
+      @include styleButton(
+        $pd-1,
+        12px,
+        transparent,
+        $color-gray-4,
+        $border-radius
+      );
+      @include styleText($fs-0, $fw-bold-1, $color-gray-4);
+      margin-right: 5px;
+    }
+    .ude-login:hover {
+      @include styleButtonHover($color-black-0, transparent, $color-black-0);
+    }
+    .ude-signup {
+      @include styleButton(
+        $pd-1,
+        12px,
+        $color-red-0,
+        $color-red-0,
+        $border-radius
+      );
+      @include styleText($fs-0, $fw-bold-1, $color-white-0);
+    }
+    .ude-signup:hover {
+      @include styleButtonHover($color-white-0, $color-red-2, $color-red-2);
+    }
+  }
+}
+
+@include responsive("extra-large") {
+  .header__right {
+    .navbar-nav {
+      flex-direction: row;
+    }
+
+    .ude-business,
+    .ude-teach,
+    .ude-border {
+      display: none;
+    }
+  }
+}
+
+@include responsive("medium") {
+  .header__left {
+    justify-content: center;
+    .header__categories,
+    .header__search {
+      display: none;
+    }
+  }
+
+  .header__right {
+    .navbar-nav {
+      justify-content: flex-end;
+    }
+    .ude-buttons {
+      display: none;
+    }
+  }
+}

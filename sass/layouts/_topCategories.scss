@@ -1,0 +1,26 @@
+.topCategories {
+  padding: 40px 0 25px;
+  &__title {
+    @include styleText($fs-3, $fw-bold-1, $color-black-0);
+  }
+
+  &__item {
+    padding: $pd-1 + 5;
+    margin-bottom: $mg-1 + 5;
+    border-radius: $border-radius;
+    box-shadow: 0 0 1px 1px rgba(20, 23, 28, 0.1),
+      0 3px 1px 0 rgba(20, 23, 28, 0.1);
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      box-shadow: 0 2px 10px 2px rgba(20, 23, 28, 0.2);
+    }
+    img {
+      $box-size: 32px;
+
+      width: $box-size;
+      height: $box-size;
+      margin-right: $mg-1 + 6;
+    }
+  }
+}

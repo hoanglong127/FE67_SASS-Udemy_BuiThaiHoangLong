@@ -1,0 +1,116 @@
+.courses {
+  padding: ($pd-2 + 10) 0;
+  &__left {
+    height: 100%;
+    padding: 0 ($pd-2 + 12);
+    background-color: $color-gray-5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h2 {
+      @include styleText($fs-2 - 2, $fw-bold-1, $color-black-0);
+      margin-bottom: 0;
+    }
+    p {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+  }
+
+  &__right {
+    .nav {
+      flex-wrap: nowrap;
+      margin-bottom: $mg-1 + 5;
+      .nav-item .nav-link {
+        height: 100%;
+        color: $color-black-0;
+        border: none;
+        padding: $pd-1;
+      }
+      .nav-item .nav-link:hover {
+        color: $color-black-0;
+      }
+      .nav-item .nav-link.active {
+        border: none;
+        border-bottom: 5px solid $color-blue;
+      }
+    }
+
+    .tab-content {
+      position: relative;
+    }
+  }
+  &__item {
+    .card .card-body {
+      padding: $pd-1 + 5;
+    }
+    .card .card-title {
+      @include styleText($fs-0, $fw-bold-1, $color-black-0);
+      line-height: 1.4;
+      margin-bottom: $mg-1;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      word-break: break-word;
+    }
+    .card .card-text {
+      @include styleText($fs-1 - 1, $fw-normal, $color-gray-4);
+      margin-bottom: $mg-1 + 5;
+    }
+
+    .card .card-rating {
+      display: flex;
+      align-items: center;
+      font-size: $fs-1;
+      margin-bottom: $mg-1;
+    }
+
+    .card .card-star {
+      color: $color-yellow;
+      margin-right: 5px;
+    }
+
+    .card .card-rating .number {
+      font-size: $fs-1 + 1;
+      font-weight: $fw-bold-1;
+      margin-right: 5px;
+    }
+
+    .card .card-rating .amount {
+      @include styleText($fs-1 - 1, $fw-normal, $color-gray-4);
+    }
+
+    .card .card-price {
+      text-align: right;
+    }
+
+    .card .card-price .old-price {
+      font-size: $fs-1;
+      text-decoration: line-through;
+      margin-right: 5px;
+    }
+
+    .card .card-price .new-price {
+      @include styleText($fs-2 - 2, $fw-bold-1, $color-black-0);
+    }
+  }
+}
+
+@include responsive("large") {
+  .courses {
+    &__left {
+      display: none;
+    }
+  }
+}
+
+@include responsive("medium") {
+  .courses {
+    .nav,
+    .card-rating {
+      flex-wrap: wrap;
+    }
+  }
+}

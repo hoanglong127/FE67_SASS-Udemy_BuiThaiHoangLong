@@ -1,0 +1,33 @@
+@mixin styleText($fs: $fs-0, $fw: $fw-normal, $color: $color-black-0) {
+  font-size: $fs;
+  font-weight: $fw;
+  color: $color;
+}
+
+@mixin styleButton($py, $px, $bg-color, $border-color, $radius) {
+  padding: $py $px;
+  background-color: $bg-color;
+  border: 1px solid $border-color;
+  border-radius: $radius;
+  transition: all 0.2s ease-in-out;
+}
+
+@mixin styleButtonHover($color, $bg-color, $border-color) {
+  color: $color;
+  background-color: $bg-color;
+  border-color: $border-color;
+}
+
+@mixin responsive($screen) {
+  @if (map-has-key($map: $breakpoints, $key: $screen)) {
+    $value: map-get(
+      $map: $breakpoints,
+      $key: $screen,
+    );
+    @media screen and (max-width: $value) {
+      @content;
+    }
+  } @else {
+    @warn 'Màn hình không hợp lệ';
+  }
+}

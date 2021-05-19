@@ -1,0 +1,41 @@
+.intro {
+  padding: $pd-2 0;
+  background: linear-gradient(to right, $color-purple, $color-red-0);
+  &__item {
+    i {
+      font-size: $fs-4 + 5;
+      color: $color-white-0;
+      margin-right: $mg-1 + 5;
+    }
+  }
+  &__text {
+    h4 {
+      @include styleText($fs-0 + 2, $fw-bold-1, $color-white-0);
+      margin-bottom: 0;
+    }
+    p {
+      @include styleText($fs-0, $fw-normal, $color-white-0);
+      margin-bottom: 0;
+    }
+  }
+}
+
+@include responsive("large") {
+  .intro {
+    &__item {
+      flex-direction: column;
+      text-align: center;
+      i {
+        margin-bottom: $mg-1;
+      }
+    }
+  }
+}
+
+@include responsive("medium") {
+  .intro {
+    &__item + &__item {
+      margin-top: $mg-2;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.banner {
+  background-color: $color-black-0;
+  text-align: center;
+  &__border {
+    height: 8px;
+    background: linear-gradient(to right, $color-purple, $color-red-0);
+  }
+  &__content {
+    padding: 100px 0;
+    h3 {
+      @include styleText($fs-3, $fw-bold-1, $color-white-0);
+      margin-bottom: $mg-1 + 6;
+    }
+    p {
+      @include styleText($fs-0, $fw-normal, $color-white-0);
+      margin-bottom: $mg-2 + 4;
+    }
+  }
+}

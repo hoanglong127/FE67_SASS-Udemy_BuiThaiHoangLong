@@ -1,0 +1,72 @@
+.footer {
+  &__top {
+    padding: ($pd-2 + $pd-2) 0;
+    border-bottom: 1px solid $color-gray-6;
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    a + a {
+      margin-top: $mg-1;
+    }
+    .ude-business,
+    .ude-teach {
+      font-weight: $fw-bold-1;
+    }
+    .form-control {
+      margin-left: auto;
+      max-width: 165px;
+    }
+    .form-control:focus {
+      box-shadow: none;
+    }
+  }
+  a {
+    display: inline-block;
+    @include styleText($fs-1, $fw-normal, $color-blue);
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      color: #003845;
+      text-decoration: none;
+    }
+  }
+  &__bottom {
+    padding: ($pd-2 + 10) 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .left {
+      img {
+        width: 110px;
+        margin-right: $mg-2;
+      }
+      span {
+        @include styleText($fs-1, $fw-normal, $color-gray-4);
+      }
+    }
+    .right {
+      a + a {
+        margin-left: $mg-1;
+      }
+    }
+  }
+}
+
+@include responsive("medium") {
+  .footer {
+    &__item {
+      .form-control {
+        margin-left: 0;
+      }
+    }
+    &__item + &__item {
+      margin-top: $mg-2;
+    }
+    &__bottom {
+      .left {
+        margin-top: $mg-1;
+      }
+      flex-direction: column-reverse;
+    }
+  }
+}

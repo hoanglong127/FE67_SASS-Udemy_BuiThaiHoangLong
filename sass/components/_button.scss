@@ -1,0 +1,19 @@
+.ude-btnStart,
+.ude-btnComapanies {
+  @include styleButton(
+    ($pd-1 + 1),
+    ($pd-1 + 2),
+    $color-red-0,
+    $color-red-0,
+    $border-radius
+  );
+  @include styleText($fs-0, $fw-bold-1, $color-white-0);
+  &:focus {
+    outline: none;
+  }
+}
+
+.ude-btnStart:hover,
+.ude-btnComapanies:hover {
+  @include styleButtonHover($color-white-0, $color-red-2, $color-red-2);
+}

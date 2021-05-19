@@ -1,0 +1,48 @@
+.feedback {
+  padding: ($pd-2 + 10) 0;
+  background-color: $color-gray-5;
+  &__title {
+    @include styleText($fs-3, $fw-bold-1, $color-black-0);
+    margin-bottom: $mg-2;
+  }
+  &__item {
+    height: 265px;
+    max-height: 265px;
+    padding: ($pd-2 + 10);
+    background-color: $color-white-0;
+    border-radius: $border-radius;
+    box-shadow: 0 1px 3px 0 rgba(20, 23, 28, 0.15);
+    p {
+      font-size: 16px;
+      line-height: 1.5;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      word-break: break-word;
+    }
+  }
+  &__user {
+    display: flex;
+    align-items: center;
+    margin-bottom: $mg-2;
+    img {
+      $box-size: 64px;
+      width: $box-size;
+      height: $box-size;
+      border-radius: 50%;
+      margin-right: $mg-1 + 5;
+    }
+    h5 {
+      @include styleText($fs-1 + 3, $fw-bold-1, $color-black-0);
+      margin-bottom: 0;
+    }
+  }
+  .owl-prev {
+    left: -3%;
+  }
+  .owl-next {
+    right: -3%;
+  }
+}
